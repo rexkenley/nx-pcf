@@ -1,0 +1,14 @@
+{
+  "extends": "./node_modules/pcf-scripts/tsconfig_base.json",
+  "compilerOptions": {
+    "typeRoots": ["node_modules/@types"],
+    "allowUmdGlobalAccess": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "nx-pcf/shared": ["../../libs/shared/src/index.ts"],
+      "nx-pcf/ui": ["../../libs/ui/src/index.ts"]
+    }
+  }
+}
